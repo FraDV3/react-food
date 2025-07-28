@@ -32,6 +32,7 @@ export default function Modal({ children, open, onClose, className = "" }) {
       className={`modal ${className}`}
       ref={dialog}
       onCancel={handleCancel}
+      onClose={onClose}
     >
       {children}
     </dialog>
